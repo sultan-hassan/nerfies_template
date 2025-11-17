@@ -231,31 +231,19 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Systematics contaminate observables, leading to distribution shifts relative to
+theoretically simulated signals—posing a major challenge for using pre-trained
+models to label such observables. Since systematics are often poorly understood
+and difficult to model, removing them directly and entirely may not be feasible.
+To address this challenge, we propose a novel method that aligns learned features
+between in-distribution (ID) and out-of-distribution (OOD) samples by optimizing
+a feature-alignment loss on the representations extracted from a pre-trained ID
+model. We first experimentally validate the method on the MNIST dataset using
+possible alignment losses, including mean squared error and optimal transport, and
+subsequently apply it to large-scale maps of neutral hydrogen. Our results show
+that optimal transport is particularly effective at aligning OOD features when parity
+between ID and OOD samples is unknown, even with limited data—mimicking
+real-world conditions in extracting information from large-scale surveys. 
           </p>
         </div>
       </div>
