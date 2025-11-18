@@ -298,12 +298,18 @@ real-world conditions in extracting information from large-scale surveys.
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
        <div class="column is-four-fifths">
-          <h2 class="title is-3">Method</h2>
+          <h2 class="title is-3">Validation with MNIST</h2>
          <div class="content has-text-justified">
           <p>
-            Schematic view of the steps proposed for feature alignment OOD labeling
+            OOD classification accuracy evolution after feature alignment using mean squared error
+(MSE) and optimal transport (OT). At the beginning of the feature alignment training, the pre-trained
+model has very high accuracy on the IDs (0.985) but only random-guess–level performance on
+the OODs (0.5). This OOD accuracy of 0.5 serves as the starting point at epoch 0. Significant
+improvement is achieved after a single backpropagation step in the many-sample case with OT,
+whereas much more optimization steps (∼20-40) are required in the few-sample case. In all cases,
+feature alignment with OT improves OOD accuracy without using any labels.
           </p>
-          <img src="./static/images/chart-2.png" style="width: 100%; display: block;">
+          <img src="./static/images/minst_exp.png" style="width: 100%; display: block;">
             </div>
         </div>
     </div>
