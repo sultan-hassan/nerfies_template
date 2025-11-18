@@ -324,7 +324,10 @@ feature alignment with OT improves OOD accuracy without using any labels.
           <h2 class="title is-3">Application in Cosmology</h2>
          <div class="content has-text-justified">
           <p>
-            OOD accuracy improvement using OT feature alignment across different scenarios to infer the matter density of the Universe, 
+            Here we pre-train CNN to model the relation between neutral hydrogen density maps and their associated  matter density 
+            (regression task: maps to one physical parameter), and then use it to exctract features for alignment. OOD is generated
+            by adding white noise, mimicking the effect of thermal noise in radio interferometric observations.
+            improvement using OT feature alignment across different scenarios to infer the matter density of the Universe, 
             reported as a function of optimization steps. For reference, the in-distribution (ID) testing set achieves R2 = 0.92.
           </p>
           <img src="./static/images/om.png" style="width: 100%; display: block;">
